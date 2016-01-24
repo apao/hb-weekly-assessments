@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Ubermelon Application Receipt {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <h1>Application Received!</h1>
+    </div> <!-- /.row -->
+    
+    <div class="row">
+        <div class="col-sm-12 col-md-6 appresponse">
+            <h3>Thank you, {{ firstname }} {{ lastname }}, for applying to be a {{ positiontype }}. Your minimum salary requirement is ${{ salaryreq }}.</h3>
+            <h3>We look forward to getting back to you soon!</h3>
+        </div>
+    </div> <!-- /.row -->
+
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <a href="/" class="btn btn-lg btn-info" role="button">Return to Ubermelon Careers Page</a>
+        </div> <!-- /.col-sm-12 homepagesectioncontent-->
+    </div>
+
+</div>
+
+{% endblock %}

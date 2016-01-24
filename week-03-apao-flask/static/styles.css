@@ -1,0 +1,69 @@
+body {
+    padding-top: 50px;
+    font-family: 'Lato';
+}
+
+h1 {
+    font-family: 'Lobster','Lato';
+}
+
+h3 {
+    font-style: italic;
+    text-align: justify;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.navbar {
+    font-family: 'Lato'
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    max-width: 70%;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.homepageheader {
+    background-image: url("img/stockvault-greengrass.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.homepageheader .overlaytext {
+    text-align: left;
+    position: absolute;
+    top: 100px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+} 
+
+.homepagesectionheader {
+    border-bottom: 1px solid #777777;
+    font-family: 'Lato';
+}
+
+.homepagesectioncontent {
+    padding-top: 1em;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+
+.appinstructions {
+    font-family: 'Lato';
+}
+
+.appbody {
+    margin-top: 1em;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.appresponse {
+    margin: 1em 0 1em 0;
+}

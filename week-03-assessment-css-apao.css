@@ -1,0 +1,17 @@
+form input {
+    background-color: yellow;
+}
+
+.boldinputtext {
+    font-weight: bold;
+}
+
+.appinstructions {
+    width: 50%;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+.appbody {
+    margin-top: 1em;
+}

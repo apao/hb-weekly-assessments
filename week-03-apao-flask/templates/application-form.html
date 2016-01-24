@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %} Ubermelon Application Form {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <h1>Ubermelon Application Form</h1>
+    </div> <!-- /.row -->
+    
+    <div class="row">
+        <div class="appinstructions">
+            <h3>Instructions: To apply for a job at Ubermelon, please complete all fields below and click the submit button.</h3>
+        </div>
+    </div> <!-- /.row -->
+
+    <div class="row">
+        <div class="appbody">
+            <form class="form-horizontal" action="/application" method="POST">
+                <div class="form-group row">
+                    <label for="firstname" class="col-sm-3 control-label">First Name:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                    </div> <!-- /.col-sm-9 -->
+                </div> <!-- /.form-group -->
+
+                <div class="form-group row">
+                    <label for="lastname" class="col-sm-3 control-label">Last Name:</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                    </div> <!-- /.col-sm-9 -->
+                </div> <!-- /.form-group -->
+
+                <div class="form-group row">
+                    <label for="salaryrequirement" class="col-sm-3 control-label"> Salary Requirement:</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                          <div class="input-group-addon">US$</div>
+                          <input type="text" class="form-control" id="salaryrequirement" name="salaryrequirement" placeholder="Amount (e.g. 1 or 10,000)">
+                          <div class="input-group-addon">.00</div>
+                        </div> <!-- /.input-group -->
+                    </div> <!-- /.col-sm-9 -->
+                </div> <!-- /.form-group -->
+
+                
+                <div class="form-group row">
+                    <label for="positiontype" class="col-sm-3 control-label">Job Position Type:</label>
+                    <div class="col-sm-9">
+                      <select type="text" class="form-control" id="positiontype" name="positiontype" placeholder="Select One...">
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="QA Engineer">QA Engineer</option>
+                        <option value="Product Manager">Product Manager</option>
+                      </select> <!-- select positiontype -->
+                    </div> <!-- /.col-sm-9 -->
+                </div> <!-- /.form-group -->
+
+                <div class="form-group row">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <input type="submit" class="btn-lg btn-primary" value="Click Here to Submit Your Application!">
+                    </div> <!-- /.col-sm-offset-3 .col-sm-9 -->
+                </div> <!-- /.form-group -->
+
+            </form>    
+        </div> <!-- /.appbody -->
+    </div> <!-- /.row -->
+</div> <!-- /.container -->
+
+{% endblock %}
+        

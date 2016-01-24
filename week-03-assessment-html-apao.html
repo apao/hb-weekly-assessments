@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills-HTML-CSS</title>
+        <!-- @apao html start time: 8:05am
+        @apao html end time: 8:28am-->
+        <!-- @apao css start time: 8:31am;
+        @ apao css end time: 8:50am-->
+        <link rel="stylesheet" href="./week-03-assessment-css-apao.css">
+    </head>
+    <body>
+        <h1>Ubermelon Application Form</h1>
+        <div class="appinstructions">
+            <h3>Instructions: To apply for a job at Ubermelon, please complete all fields below and click the submit button.</h3>
+        </div>
+        <div class="appbody">
+            <form action="/application" method="POST">
+                <label> First Name:
+                    <input type="text" name="firstname" placeholder="First Name">
+                </label>
+                <br>
+                <label> Last Name:
+                    <input type="text" name="lastname" placeholder="Last Name" class="boldinputtext">
+                </label>
+                <br>
+                <label> Salary Requirement:
+                    $ <input type="text" name="salaryreq" placeholder="(e.g. $1 or $10,000)">
+                </label>
+                <br>
+                <label> Position:
+                    <select name="positiontype">
+                        <option value="softwareengineer">Software Engineer</option>
+                        <option value="qaengineer">QA Engineer</option>
+                        <option value="productmanager">Product Manager</option>
+                    </select>
+                </label>
+                <br><br>
+                <label>
+                    <input type="submit" value="Click Here to Submit Your Application!">
+                </label>
+                <br>
+            </form>    
+        </div>
+    </body>
+</html>
