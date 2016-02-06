@@ -594,7 +594,7 @@
     for (var j=lengthOfPrimesList + 1; j <= lengthOfPrimesList + 5; j++) {
       
       // produces div html with the corresponding bg-color and nth prime
-      var newPrimeDiv = '<div class="prime-box" style="background-color:' + PRIME_COLORS[(j%5)-1] + '">' + calculateNthPrime(j) + '</div>'
+      var newPrimeDiv = '<div class="prime-box" style="background-color:' + PRIME_COLORS[(j-1)%5] + '">' + calculateNthPrime(j) + '</div>'
 
       // adds the appropriate div html to the final html that will be shown
       finalPrimeDiv += newPrimeDiv;
